@@ -1,0 +1,17 @@
+{
+    "mode": "Mode",
+    "simple": "Simple",
+    "advanced": "Advanced",
+    "title": "Money timer",
+    "language": "Language:",
+    "currency": "Currency:",
+    "salary": "Salary:",
+    "salaryPeriod": "Salary period",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "taxes": "Taxes:",
+    "startWorking": "Start working",
+    "moneySpent": "Money spent:",
+    "moneyAfterTaxes": "Money after taxes:",
+    "timeSpent": "Time spent"
+}

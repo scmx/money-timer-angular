@@ -1,0 +1,66 @@
+<main class="app-main">
+  <section class="app-container">
+    <section class="app-section">
+      <h2>Input</h2>
+      <fieldset class="app-fields">
+        <label for="salary">{{ 'salary' | translate }}</label>
+        <span>{{ settings.moneyPrefix }}</span>
+        <input [(ngModel)]="settings.salary" name="salary" class="money" />
+        <span>{{ settings.moneySuffix }}</span>
+        <span>{{ salaryPeriod | translate }}</span>
+      </fieldset>
+      <fieldset class="app-fields">
+        <button type="button" (click)="settings.updateStartTime()">
+          {{ 'startWorking' | translate }}
+        </button>
+      </fieldset>
+      <fieldset class="app-fields">
+        <label for="moneySpent">{{ 'moneySpent' | translate }}</label>
+        <input [ngModel]="settings.moneySpentPretty" readonly name="moneySpent" class="money" />
+      </fieldset>
+      <fieldset class="app-fields hide" *ngIf="settings.mode === 'advanced'">
+        <label for="moneyAfterTaxes">{{ 'moneyAfterTaxes' | translate }}</label>
+        <input [ngModel]="settings.moneyAfterTaxesPretty" readonly name="moneyAfterTaxes" class="money" />
+      </fieldset>
+      <fieldset class="app-fields hide" *ngIf="settings.mode === 'advanced'">
+        <label for="timeSpent">{{ 'timeSpent' | translate }}</label>
+        <input [ngModel]="settings.timeSpent" readonly name="timeSpent" />
+      </fieldset>
+    </section>
+    <section class="app-section">
+      <h2>Settings</h2>
+      <fieldset class="app-fields">
+        <label for="mode">{{ 'mode' | translate }}</label>
+        <select [(ngModel)]="settings.mode" name="mode">
+          <option value="simple">{{ 'simple' | translate }}</option>
+          <option value="advanced">{{ 'advanced' | translate }}</option>
+        </select>
+      </fieldset>
+      <fieldset class="app-fields">
+        <label for="locale">{{ 'language' | translate }}</label>
+        <select [(ngModel)]="settings.locale" name="locale">
+          <option value="sv-se">sv_SE</option>
+          <option value="en-us">en_US</option>
+        </select>
+      </fieldset>
+      <fieldset class="app-fields">
+        <label for="currency">{{ 'currency' | translate }}</label>
+        <select [(ngModel)]="settings.currency" name="currency">
+          <option value="SEK">SEK</option>
+          <option value="USD">USD</option>
+        </select>
+      </fieldset>
+      <fieldset class="app-fields hide" *ngIf="settings.mode === 'advanced'">
+        <label for="salaryPeriod">{{ 'salaryPeriod' | translate }}</label>
+        <select [(ngModel)]="settings.salaryPeriod" name="salaryPeriod">
+          <option value="monthly">{{ 'monthly' | translate }}</option>
+          <option value="annually">{{ 'annually' | translate }}</option>
+        </select>
+      </fieldset>
+      <fieldset class="app-fields hide" *ngIf="settings.mode === 'advanced'">
+        <label for="taxesPercentage">{{ 'taxes' | translate }}</label>
+        <input [(ngModel)]="settings.taxesPercentage" name="taxesPercentage" size="3" />%
+      </fieldset>
+    </section>
+  </section>
+</main>

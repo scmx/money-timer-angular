@@ -1,0 +1,17 @@
+{
+  "mode": "Läge",
+  "simple": "Simpelt",
+  "advanced": "Avancerat",
+  "title": "Pengaräknare",
+  "language": "Språk:",
+  "currency": "Valuta:",
+  "salary": "Lön:",
+  "salaryPeriod": "Löneperiod",
+  "monthly": "Månadsvis",
+  "annually": "Årsvis",
+  "taxes": "Skatt:",
+  "startWorking": "Börja jobba",
+  "moneySpent": "Pengar spenderade:",
+  "moneyAfterTaxes": "Pengar efter skatt:",
+  "timeSpent": "Tid spenderad"
+}

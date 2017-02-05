@@ -1,0 +1,9 @@
+.app-fields {
+  padding: 1em;
+  border: 0;
+  background: aliceblue;
+}
+.money {
+  text-align: right;
+  font-family: monospace;
+}
