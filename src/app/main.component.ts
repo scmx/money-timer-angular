@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { Settings } from './settings'
+import { SettingsService } from './settings.service'
 
 @Component({
   selector: 'app-main',
@@ -11,5 +11,5 @@ import { Settings } from './settings'
 })
 export class MainComponent {
   @Input()
-  settings: Settings
+  settings: SettingsService
 }
