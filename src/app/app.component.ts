@@ -23,15 +23,3 @@ export class AppComponent implements OnInit {
     translateService.use('sv-se')
   }
 }
-
-const context = {
-  translate (keys) {
-    const res = keys.split('.').reduce((data, key) => {
-      return data[key] ? data[key] : data
-    }, this.locales[this.locale])
-    return typeof res === 'string' ? res : ''
-  },
-  titleCase (str) {
-    return str.toUpperCase()
-  },
-}
