@@ -5,7 +5,6 @@ import { SettingsService } from './settings.service'
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: [
-    './layout.css',
     './header.component.css',
   ],
 })

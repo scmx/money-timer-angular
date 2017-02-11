@@ -5,7 +5,6 @@ import { SettingsService } from './settings.service'
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: [
-    './layout.css',
     './main.component.css',
   ],
 })
